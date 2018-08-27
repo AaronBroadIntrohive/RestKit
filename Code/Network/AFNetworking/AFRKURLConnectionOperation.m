@@ -299,7 +299,7 @@ static BOOL AFRKSecKeyIsEqualToKey(SecKeyRef key1, SecKeyRef key2) {
     
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
     if (_backgroundTaskIdentifier) {
-        [[UIApplication sharedApplication] endBackgroundTask:_backgroundTaskIdentifier];
+        //[[UIApplication sharedApplication] endBackgroundTask:_backgroundTaskIdentifier];
         _backgroundTaskIdentifier = UIBackgroundTaskInvalid;
     }
 #endif
